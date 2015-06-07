@@ -13,7 +13,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription("Managed wrapper for BeaEngine (http://beaengine.org/)")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Xab3r")]
-[assembly: AssemblyProduct("")]
+[assembly: AssemblyProduct("BeaEngine.Net")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
