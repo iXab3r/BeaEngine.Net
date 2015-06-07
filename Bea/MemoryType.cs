@@ -5,17 +5,17 @@ using System.Runtime.InteropServices;
 
 #endregion
 
-namespace Bea
+namespace BeaEngine.Net
 {
-    [StructLayout(LayoutKind.Sequential, Pack = 1)]
-    public class MemoryType
-    {
-        public Int32 BaseRegister;
+	[StructLayout(LayoutKind.Sequential, Pack = 1)]
+	public class MemoryType
+	{
+		public Int32 BaseRegister;
 
-        public Int32 IndexRegister;
+		public Int32 IndexRegister;
 
-        public Int32 Scale;
+		public Int32 Scale;
 
-        public Int64 Displacement;
-    }
+		public Int64 Displacement;
+	}
 }

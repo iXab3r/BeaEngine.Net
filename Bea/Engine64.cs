@@ -6,41 +6,41 @@ using System.Runtime.InteropServices;
 
 #endregion
 
-namespace Bea
+namespace BeaEngine.Net
 {
-    public class BeaEngine64
-    {
-        [MethodImpl(MethodImplOptions.NoOptimization)]
-        static BeaEngine64()
-        {
-            ResourcesHelper.LoadBea64();
-        }
+	public class BeaEngine64
+	{
+		public const string LibraryName = @"BeaEngine64.dll";
 
-        public static UInt64 Version
-        {
-            get
-            {
-                return BeaEngineVersion();
-            }
-        }
+		[MethodImpl(MethodImplOptions.NoOptimization)]
+		static BeaEngine64()
+		{
+			ResourcesHelper.LoadBea64();
+		}
 
-        public static UInt64 Revision
-        {
-            get
-            {
-                return BeaEngineRevision();
-            }
-        }
+		public static UInt64 Version
+		{
+			get
+			{
+				return BeaEngineVersion();
+			}
+		}
 
-        [DllImport(LibraryName)]
-        public static extern int Disasm([In] [Out] [MarshalAs(UnmanagedType.LPStruct)] Disasm _disasm);
+		public static UInt64 Revision
+		{
+			get
+			{
+				return BeaEngineRevision();
+			}
+		}
 
-        [DllImport(LibraryName)]
-        private static extern UInt64 BeaEngineVersion();
+		[DllImport(LibraryName)]
+		public static extern int Disasm([In] [Out] [MarshalAs(UnmanagedType.LPStruct)] Disasm _disasm);
 
-        [DllImport(LibraryName)]
-        private static extern UInt64 BeaEngineRevision();
+		[DllImport(LibraryName)]
+		private static extern UInt64 BeaEngineVersion();
 
-        public const string LibraryName = @"BeaEngine64.dll";
-    }
+		[DllImport(LibraryName)]
+		private static extern UInt64 BeaEngineRevision();
+	}
 }

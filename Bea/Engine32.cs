@@ -5,44 +5,43 @@ using System.Runtime.InteropServices;
 
 #endregion
 
-namespace Bea
+namespace BeaEngine.Net
 {
-    public class BeaEngine32
-    {
-        [MethodImpl(MethodImplOptions.NoOptimization)]
-        static BeaEngine32()
-        {
-            ResourcesHelper.LoadBea32();
-        }
+	public class BeaEngine32
+	{
+		public const string LibraryName = @"BeaEngine32.dll";
 
-        public static string Version
-        {
-            get
-            {
-                return BeaEngineVersion();
-            }
-        }
+		[MethodImpl(MethodImplOptions.NoOptimization)]
+		static BeaEngine32()
+		{
+			ResourcesHelper.LoadBea32();
+		}
 
-        public static string Revision
-        {
-            get
-            {
-                return BeaEngineRevision();
-            }
-        }
+		public static string Version
+		{
+			get
+			{
+				return BeaEngineVersion();
+			}
+		}
 
-        [DllImport(LibraryName, CallingConvention = CallingConvention.StdCall)]
-        public static extern int Disasm([In] [Out] [MarshalAs(UnmanagedType.LPStruct)] Disasm _disasm);
+		public static string Revision
+		{
+			get
+			{
+				return BeaEngineRevision();
+			}
+		}
 
-        [DllImport(LibraryName,CallingConvention = CallingConvention.StdCall)]
-        [return: MarshalAs(UnmanagedType.LPStr)]
-        private static extern string BeaEngineVersion();
+		[DllImport(LibraryName, CallingConvention = CallingConvention.StdCall)]
+		public static extern int Disasm([In] [Out] [MarshalAs(UnmanagedType.LPStruct)] Disasm _disasm);
 
-        [DllImport(LibraryName, CallingConvention = CallingConvention.StdCall)]
-        [return: MarshalAs(UnmanagedType.LPStr)]
-        private static extern string BeaEngineRevision();
+		[DllImport(LibraryName, CallingConvention = CallingConvention.StdCall)]
+		[return: MarshalAs(UnmanagedType.LPStr)]
+		private static extern string BeaEngineVersion();
 
-        public const string LibraryName = @"BeaEngine32.dll";
-
-    }
+		[DllImport(LibraryName, CallingConvention = CallingConvention.StdCall)]
+		[return: MarshalAs(UnmanagedType.LPStr)]
+		private static extern string BeaEngineRevision();
+	}
 }

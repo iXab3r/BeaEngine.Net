@@ -1,40 +1,44 @@
-﻿using System.Runtime.InteropServices;
+﻿#region Usings
 
-namespace Bea
+using System.Runtime.InteropServices;
+
+#endregion
+
+namespace BeaEngine.Net
 {
-    [StructLayout(LayoutKind.Sequential, Pack = 1)]
-    public class PrefixInfo
-    {
-        public int Number;
+	[StructLayout(LayoutKind.Sequential, Pack = 1)]
+	public class PrefixInfo
+	{
+		public int Number;
 
-        public int NbUndefined;
+		public int NbUndefined;
 
-        public byte LockPrefix;
+		public byte LockPrefix;
 
-        public byte OperandSize;
+		public byte OperandSize;
 
-        public byte AddressSize;
+		public byte AddressSize;
 
-        public byte RepnePrefix;
+		public byte RepnePrefix;
 
-        public byte RepPrefix;
+		public byte RepPrefix;
 
-        public byte FSPrefix;
+		public byte FSPrefix;
 
-        public byte SSPrefix;
+		public byte SSPrefix;
 
-        public byte GSPrefix;
+		public byte GSPrefix;
 
-        public byte ESPrefix;
+		public byte ESPrefix;
 
-        public byte CSPrefix;
+		public byte CSPrefix;
 
-        public byte DSPrefix;
+		public byte DSPrefix;
 
-        public byte BranchTaken;
+		public byte BranchTaken;
 
-        public byte BranchNotTaken;
+		public byte BranchNotTaken;
 
-        public REX_Struct REX;
-    }
+		public REX_Struct REX;
+	}
 }

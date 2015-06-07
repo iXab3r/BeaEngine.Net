@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 
 #endregion
 
-namespace Bea
+namespace BeaEngine.Net
 {
-    internal static class Native
-    {
-        [DllImport("kernel32", SetLastError = true)]
-        public static extern IntPtr LoadLibrary(string _lpFileName);
-    }
+	internal static class Native
+	{
+		[DllImport("kernel32", SetLastError = true)]
+		public static extern IntPtr LoadLibrary(string _lpFileName);
+	}
 }
