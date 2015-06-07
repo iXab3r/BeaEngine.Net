@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Weavers>
+	<Costura>
+		<Unmanaged32Assemblies>
+			BeaEngine32.dll
+		</Unmanaged32Assemblies>
+		<Unmanaged64Assemblies>
+			BeaEngine64.dll
+		</Unmanaged64Assemblies>
+	</Costura>
+</Weavers>

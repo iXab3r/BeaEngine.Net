@@ -18,11 +18,11 @@ namespace BeaEngine.Net
 			ResourcesHelper.LoadBea64();
 		}
 
-		public static UInt64 Version
+		public static string Version
 		{
 			get
 			{
-				return BeaEngineVersion();
+				return BeaEngineVersion().ToString();
 			}
 		}
 
