@@ -10,11 +10,11 @@ using System.Runtime.InteropServices;
 // associated with an assembly.
 
 [assembly: AssemblyTitle("BeaEngine.Net")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Managed wrapper for BeaEngine (http://beaengine.org/)")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("BeaEngine.Net")]
-[assembly: AssemblyCopyright("Copyright ©  2015 Xab3r")]
+[assembly: AssemblyCompany("Xab3r")]
+[assembly: AssemblyProduct("")]
+[assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
