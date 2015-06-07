@@ -2,6 +2,8 @@
 Managed wrapper for BeaEngine http://beaengine.org/
 Wrapper uses Fody.Costura for embedding both x86 and x64 versions of BeaEngine
 
+NuGet package: https://www.nuget.org/packages/BeaEngine.Net/
+
 BeaEngine is a library coded in C respecting ISO C99 norm since 4.0.0 version (originally written with the IDE Code::Blocks and the compiler Pelles C). 
 It has been developed to decode instructions from 16 bits, 32 bits and 64 bits intel architectures.
 Actually, the main function available is called Disasm. 
