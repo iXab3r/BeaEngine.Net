@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Bea;
+
+using BeaEngine.Net;
+
 using NUnit.Framework;
 namespace Bea.Tests
 {
