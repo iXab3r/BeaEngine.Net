@@ -9,12 +9,12 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 
-[assembly: AssemblyTitle("Bea")]
+[assembly: AssemblyTitle("BeaEngine.Net")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Bea")]
-[assembly: AssemblyCopyright("Copyright ©  2010")]
+[assembly: AssemblyProduct("BeaEngine.Net")]
+[assembly: AssemblyCopyright("Copyright ©  2015 Xab3r")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
